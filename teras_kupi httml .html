@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teras Kupi</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;}
+    body{background:#f7f7f7;color:#222;line-height:1.4}
+    a{text-decoration:none;color:inherit}
+    .container{max-width:1000px;margin:18px auto;padding:16px}
+    header{background:linear-gradient(90deg,#6b4f3b,#b8875b);color:#fff;padding:18px;border-radius:10px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:64px;height:64px;border-radius:8px;flex-shrink:0;background:#fff;padding:6px;display:grid;place-items:center}
+    .logo img{width:100%;height:100%;object-fit:cover;border-radius:6px}
+    h1{font-size:20px;margin-bottom:4px}
+    p.lead{opacity:0.95;font-size:13px}
+    nav{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+    .btn{background:rgba(255,255,255,0.12);color:#fff;padding:8px 12px;border-radius:8px;font-weight:600;font-size:13px}
+    .btn:active{transform:translateY(1px)}
+    .hero{display:grid;grid-template-columns:1fr;gap:12px;margin:14px 0}
+    .card{background:#fff;border-radius:10px;padding:14px;box-shadow:0 3px 8px rgba(0,0,0,0.06)}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .product{display:flex;gap:10px;align-items:center;padding:8px;border-radius:8px;border:1px solid #eee}
+    .product img{width:80px;height:80px;border-radius:6px;object-fit:cover}
+    .prod-info h3{font-size:15px;margin-bottom:4px}
+    .price{font-weight:800;color:#b3511a}
+    footer{margin-top:12px;text-align:center;color:#666;font-size:13px}
+    form{display:grid;gap:8px}
+    input,textarea,select{padding:10px;border-radius:8px;border:1px solid #ddd;font-size:14px}
+    button.primary{background:#6b4f3b;color:#fff;padding:10px;border-radius:8px;border:0;font-weight:700}
+    @media(min-width:700px){
+      .hero{grid-template-columns:1fr 320px}
+      .grid{grid-template-columns:repeat(3,1fr)}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><rect rx='12' width='100%' height='100%' fill='%23ffffff'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='72' fill='%236b4f3b' font-family='Arial'>TK</text></svg>" alt="Logo Teras Kupi">
+        </div>
+        <div>
+          <h1>Teras Kupi</h1>
+          <p class="lead">Kopi sachet • Voucher WiFi • Indomie — harga terjangkau, suasana santai di teras.</p>
+        </div>
+      </div>
+
+      <nav>
+        <a class="btn" href="#produk">Produk</a>
+        <a class="btn" href="#lokasi">Lokasi</a>
+        <a class="btn" href="#kontak">Kontak</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section>
+        <div class="card" id="produk">
+          <h2 style="margin-bottom:8px">Produk Unggulan</h2>
+          <div class="grid">
+            <div class="product">
+              <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><rect width='100%' height='100%' rx='8' fill='%23f0e6dc'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='20' fill='%236b4f3b'>Kopi Sachet</text></svg>" alt="Kopi Sachet">
+              <div class="prod-info">
+                <h3>Kopi Sachet</h3>
+                <div class="price">Rp 5.000</div>
+                <div style="font-size:13px;color:#666;margin-top:6px">Luwak, robusta, pilihan</div>
+              </div>
+            </div>
+            <div class="product">
+              <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><rect width='100%' height='100%' rx='8' fill='%23f7f4ee'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='18' fill='%238b5a3a'>Indomie</text></svg>" alt="Indomie">
+              <div class="prod-info">
+                <h3>Indomie</h3>
+                <div class="price">Rp 8.000</div>
+                <div style="font-size:13px;color:#666;margin-top:6px">Siap saji, lauk opsional</div>
+              </div>
+            </div>
+            <div class="product">
+              <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><rect width='100%' height='100%' rx='8' fill='%23efe3d8'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='15' fill='%23715b46'>Voucher WiFi</text></svg>" alt="Voucher WiFi">
+              <div class="prod-info">
+                <h3>Voucher WiFi</h3>
+                <div class="price">Rp 3.000 / jam</div>
+                <div style="font-size:13px;color:#666;margin-top:6px">Cepat & aman untuk kerja/streaming</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="margin-top:12px">
+          <h2>Info Singkat</h2>
+          <p style="margin-top:8px;color:#444">Teras Kupi buka setiap hari pukul <strong>09.00–21.00</strong>. Duduk santai di teras rumah dengan colokan dan WiFi tersedia. Terima pesanan takeaway.</p>
+        </div>
+      </section>
+      <aside class="card" id="lokasi">
+        <h2>Lokasi & Kontak</h2>
+        <p style="margin-top:8px;color:#444">Teras rumah — <strong>Jl. Contoh No.12, Kota Anda</strong> (tulis alamat sebenarnya di sini)</p>
+        <h3 style="margin-top:12px">Kontak</h3>
+        <p style="margin-top:6px;color:#444">WhatsApp: <strong>0812-xxxx-xxxx</strong></p>
+        <h3 style="margin-top:12px">Pesan / Reservasi</h3>
+        <form id="contactForm" onsubmit="return sendMessage(event)">
+          <input type="text" id="name" placeholder="Nama" required>
+          <input type="tel" id="phone" placeholder="No. HP atau WhatsApp" required>
+          <select id="order" aria-label="Pilih produk">
+            <option value="">Pilih produk (opsional)</option>
+            <option>Kopi Sachet - Rp 5.000</option>
+            <option>Indomie - Rp 8.000</option>
+            <option>Voucher WiFi - Rp 3.000/jam</option>
+          </select>
+          <textarea id="msg" rows="3" placeholder="Pesan / jam kedatangan (opsional)"></textarea>
+          <button class="primary" type="submit">Kirim Pesan (demo)</button>
+          <div style="font-size:12px;color:#666;margin-top:6px">* Tombol ini hanya simulasi. Lihat catatan di bawah untuk cara membuat form aktif.</div>
+        </form>
+      </aside>
+    </main>
+    <footer class="card" id="kontak">
+      <div style="padding:10px 6px">
+        <strong>Teras Kupi</strong> — Kopi hangat & suasana santai. <br>
+        &copy; <span id="year"></span> Teras Kupi. Semua hak dilindungi.
+      </div>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function sendMessage(e){
+      e.preventDefault();
+      const data = {
+        nama: document.getElementById('name').value.trim(),
+        hp: document.getElementById('phone').value.trim(),
+        order: document.getElementById('order').value,
+        pesan: document.getElementById('msg').value.trim()
+      };
+      alert('Pesan dikirim (simulasi)\n\n' +
+            'Nama: ' + data.nama + '\n' +
+            'HP: ' + data.hp + '\n' +
+            'Order: ' + (data.order || '-') + '\n' +
+            'Pesan: ' + (data.pesan || '-'));
+      e.target.reset();
+      return false;
+    }
+  </script>
+</body>
+</html>
